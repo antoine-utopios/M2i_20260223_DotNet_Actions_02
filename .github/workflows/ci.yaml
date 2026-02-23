@@ -24,7 +24,7 @@ jobs:
         run: dotnet build DemoGithubActions --no-restore 
 
       - name: Publication du projet
-        run: dotnet publish DemoGithubActions --no-build --configuration Release -o ./publish
+        run: dotnet publish DemoGithubActions --no-build --configuration Debug -o ./publish
 
       - name: Upload artéfact
         uses: actions/upload-artifact@v4
